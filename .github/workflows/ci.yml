@@ -20,6 +20,11 @@ jobs:
         run: |
           echo "PREFIX=$RUNNER_TEMP/prefix" >> "$GITHUB_ENV"
           mkdir -p "$RUNNER_TEMP/prefix/tmp"
+      - name: Adapt Termux shebangs for the runner
+        run: |
+          grep -rl '^#!/data/data/com.termux' lib scripts tmux-code-agent 2>/dev/null \
+            | xargs -r sed -i '1s|^#!/data/data/com.termux/files/usr/bin/|#!/usr/bin/env |'
+          head -1 lib/tca-runner
       - name: Install dependencies
         run: pip install pytest -r requirements.lock
       - name: Tests
