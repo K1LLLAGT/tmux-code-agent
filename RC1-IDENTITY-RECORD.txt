@@ -1,0 +1,25 @@
+tmux-code-agent v1.0.0-rc1 identity record
+
+RC1 source tag:
+v1.0.0-rc1-source
+
+RC1 source commit:
+87eb3f1a297715e400b9dbd16f97feccce12f5f9
+
+RC1 annotated tag object:
+749f15cf096f892c500bf75ae45ac3ed106994ee
+
+Post-RC1 main baseline commit:
+996a0d6269e4f668d14a226f796d5783353444a6
+
+RC1 distribution archive:
+tmux-code-agent-v1.0.0-rc1.tar.gz
+
+RC1 distribution SHA-256:
+2c8bfdac4fa9ab001aca67551c7410f3cfdcf90f196d18b2bc78db99d04da44c
+
+V1 development rollback SHA-256:
+251a28b2e9666202442828804dc6b4ba3de4bd515d27b5618b4ec356d9aeddf6
+
+Policy:
+RC1 is immutable. Any packaged-content change becomes v1.0.0-rc2.
