@@ -1,0 +1,5 @@
+<resources>
+    <color name="tca_bg">#101418</color>
+    <color name="tca_fg">#E6EDF3</color>
+    <color name="tca_accent">#4CC38A</color>
+</resources>
