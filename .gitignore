@@ -15,3 +15,18 @@ rc2-install-test-*/
 android/.gradle/
 android/.kotlin/
 docs/milestones/checkpoints/
+
+# Local preserved spike/debug artifacts
+/docs/spike-results/logs/
+/docs/spike-results/sm-t870-q03-auth-success-assertion-failure.json
+/docs/spike-results/sm-t870-q03.first-failure.json
+/docs/spike-results/sm-t870-q04-controlmaster.first-failure.json
+/docs/spike-results/sm-t870-q04-controlmaster.multiplex-failure.json
+/docs/spike-results/sm-t870-q07.global-python-failure.json
+/docs/spike-results/sm-t870-q07.original-global-failure.json
+/docs/spike-results/sm-t870-q13.global-python-failure.json
+/docs/spike-results/sm-t870-q13.legacy-license-field-failure.json
+
+# Local release workspace helpers
+/scripts/release/build-workspace.sh
+/scripts/release/sensitive-allowlist.txt
