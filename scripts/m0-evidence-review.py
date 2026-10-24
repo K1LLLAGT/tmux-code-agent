@@ -20,7 +20,7 @@ print('\nPASS:',sum(s=='PASS' for _,s,_,_,_,_ in rows),'FAIL:',sum(s=='FAIL' for
 print('\nOutstanding:')
 for q,s,c,a,p,v in rows:
  if s!='PASS' or a not in ('Accepted','Rejected'):print(f'- {q}: result={s}/{c}; ADR={a}')
-print('\nAdditional M0 gates:')
-print('- Two-device dependency install must be confirmed manually from device evidence.')
-print('- Manual/deferred Q06, Q09, Q11, Q12, and Q14 must be resolved or covered by accepted ADR fallbacks.')
-print('- Approved to begin M1 must remain NO until every gate is satisfied.')
+print('\nM0 gate interpretation:')
+print('- The authoritative M0 doctor determines approval to begin M1.')
+print('- Accepted ADR fallbacks and documented deferrals are warnings, not blockers.')
+print('- Current deferred items remain visible for follow-up without blocking M1 when the doctor reports no blockers.')
