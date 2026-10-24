@@ -18,5 +18,7 @@ class Lifecycle:
  status:SessionStatus=SessionStatus.CREATED
  updated_at:str=field(default_factory=lambda:datetime.now(timezone.utc).isoformat())
  def transition(self,target:SessionStatus)->None:
+  target=SessionStatus(target)
+  if target==self.status:return
   if target not in _ALLOWED[self.status]: raise ValueError(f"invalid transition {self.status}->{target}")
   self.status=target; self.updated_at=datetime.now(timezone.utc).isoformat()
