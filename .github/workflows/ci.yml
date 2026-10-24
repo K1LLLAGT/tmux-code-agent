@@ -25,6 +25,7 @@ jobs:
           grep -rl '^#!/data/data/com.termux' lib scripts tmux-code-agent 2>/dev/null \
             | xargs -r sed -i '1s|^#!/data/data/com.termux/files/usr/bin/|#!/usr/bin/env |'
           head -1 lib/tca-runner
+          echo "TCA_PYTHON=$(command -v python)" >> "$GITHUB_ENV"
       - name: Install dependencies
         run: pip install pytest -r requirements.lock
       - name: Tests
