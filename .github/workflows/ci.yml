@@ -1,19 +1,26 @@
 name: ci
 on:
-  push: { branches: [main] }
+  push:
+    branches: [main]
   pull_request:
   workflow_dispatch:
-permissions: { contents: read }
+permissions:
+  contents: read
 jobs:
   test:
     runs-on: ubuntu-latest
-    env:
-      PREFIX: ${{ runner.temp }}/prefix
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
-        with: { python-version: "3.14" }
-      - run: sudo apt-get update && sudo apt-get install -y tmux openssh-server
-      - run: mkdir -p "$PREFIX/tmp"
-      - run: pip install pytest -r requirements.lock
-      - run: python -m pytest tests/unit tests/integration tests/fault -q
+        with:
+          python-version: "3.14"
+      - name: Install system packages
+        run: sudo apt-get update && sudo apt-get install -y tmux openssh-server
+      - name: Termux-style PREFIX
+        run: |
+          echo "PREFIX=$RUNNER_TEMP/prefix" >> "$GITHUB_ENV"
+          mkdir -p "$RUNNER_TEMP/prefix/tmp"
+      - name: Install dependencies
+        run: pip install pytest -r requirements.lock
+      - name: Tests
+        run: python -m pytest tests/unit tests/integration tests/fault -q
