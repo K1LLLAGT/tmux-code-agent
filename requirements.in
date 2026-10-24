@@ -3,3 +3,4 @@ uvicorn
 websockets>=14
 h11
 anyio
+httpx2
