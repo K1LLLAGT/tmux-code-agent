@@ -1,0 +1,38 @@
+__pycache__/
+*.py[cod]
+.venv/
+*.key
+*.sock
+*.pid
+docs/spike-results/*.jsonl
+!docs/spike-results/.gitkeep
+.m0-venv/
+
+# Test/cache
+.pytest_cache/
+
+# Generated release/install trees
+dist/
+releases/
+
+# Historical development archives/checkpoints
+docs/*.tar.gz
+docs/*.tar.gz.sha256
+docs/milestones/checkpoints/
+
+# Raw device/spike logs
+docs/spike-results/logs/
+
+# Historical failure/pre-fix evidence
+docs/spike-results/*failure*.json
+docs/spike-results/*.pre-*.json
+scripts/**/*.pre-*
+scripts/**/*.previous
+scripts/**/*.disabled
+tests/**/*.pre-*
+transport/*.pre-*
+
+
+# Historical milestone pre-completion archives
+docs/milestones/*-pre-complete.*.tar.gz
+docs/milestones/*-pre-complete.*.tar.gz.sha256

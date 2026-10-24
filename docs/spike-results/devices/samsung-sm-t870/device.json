@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "physical_device_id": "23cdc706bc4c83d4",
+  "device_slug": "samsung-sm-t870",
+  "manufacturer": "samsung",
+  "model": "SM-T870",
+  "android_release": "13",
+  "android_sdk": "33",
+  "android_fingerprint": "samsung/gts7lwifixx/gts7lwifi:13/TP1A.220624.014/T870XXS8DXH1:user/release-keys",
+  "architecture": "aarch64",
+  "python": "3.14.8"
+}

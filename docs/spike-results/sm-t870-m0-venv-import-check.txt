@@ -1,0 +1,12 @@
+executable: /data/data/com.termux/files/home/tmux-code-agent/tmux-code-agent-milestone-0/.m0-venv/bin/python
+prefix: /data/data/com.termux/files/home/tmux-code-agent/tmux-code-agent-milestone-0/.m0-venv
+base_prefix: /data/data/com.termux/files/usr
+isolated: True
+
+[PASS] starlette    dist_version='1.9.0' module_version='1.9.0'
+[PASS] uvicorn      dist_version='0.54.0' module_version='0.54.0'
+[PASS] websockets   dist_version='17.3' module_version='17.3'
+[PASS] h11          dist_version='0.16.0' module_version='0.16.0'
+[PASS] anyio        dist_version='4.15.1' module_version=None
+
+failed: none

@@ -1,0 +1,45 @@
+======================================================================
+starlette
+======================================================================
+version: 1.9.0
+License: None
+License-Expression: BSD-3-Clause
+License classifiers:
+  (none)
+
+======================================================================
+uvicorn
+======================================================================
+version: 0.54.0
+License: None
+License-Expression: BSD-3-Clause
+License classifiers:
+  (none)
+
+======================================================================
+websockets
+======================================================================
+version: 17.3
+License: None
+License-Expression: BSD-3-Clause
+License classifiers:
+  (none)
+
+======================================================================
+h11
+======================================================================
+version: 0.16.0
+License: MIT
+License-Expression: None
+License classifiers:
+  License :: OSI Approved :: MIT License
+
+======================================================================
+anyio
+======================================================================
+version: 4.15.1
+License: None
+License-Expression: MIT
+License classifiers:
+  (none)
+

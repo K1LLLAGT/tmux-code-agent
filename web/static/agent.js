@@ -1,0 +1,1 @@
+export function renderAgent(root,state){root.textContent='';const h=document.createElement('h2');h.textContent='Agent';const feed=document.createElement('div');feed.id='agent-feed';feed.textContent=state?.status||'Ready';root.append(h,feed);}

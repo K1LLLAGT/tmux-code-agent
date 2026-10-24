@@ -1,0 +1,2 @@
+# M7 Implementation
+M7 introduces deterministic model/agent plumbing without granting model output authority over policy. Repository/project-map and tool-result text are structurally labelled untrusted. Tool calls are dispatched only as structured objects. Context compaction preserves the backend policy and active user task. Completion claims can be checked against backend facts. The device smoke uses a local deterministic OpenAI-compatible fake provider, so it validates the chain without depending on a particular model installation.

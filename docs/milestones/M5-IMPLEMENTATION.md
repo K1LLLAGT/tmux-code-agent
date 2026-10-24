@@ -1,0 +1,2 @@
+# M5 Implementation
+M5 implements the backend foundations required by the Terminal browser channel. Binary frames separate terminal data from resize/ping controls. Viewer sessions are grouped with the persistent TCA tmux session so browser reconnects do not own process lifetime. Backpressure uses high/low-water hysteresis. Event replay uses monotonically increasing sequence numbers. The committed frontend shell includes mobile tabs, terminal area, extra-key controls, and visualViewport resizing.

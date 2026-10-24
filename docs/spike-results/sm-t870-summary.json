@@ -1,0 +1,104 @@
+{
+  "device": "sm-t870",
+  "generated_at": "2026-10-24T02:00:46.919496+00:00",
+  "results": [
+    {
+      "question": "Q01",
+      "status": "PASS",
+      "code": "CONTROL_FRAMES_OK",
+      "exit": null,
+      "file": "docs/spike-results/sm-t870-q01.json"
+    },
+    {
+      "question": "Q02",
+      "status": "PASS",
+      "code": "FEATURES_RECORDED",
+      "exit": null,
+      "file": "docs/spike-results/sm-t870-q02.json"
+    },
+    {
+      "question": "Q03",
+      "status": "FAIL",
+      "code": "SSH_MATRIX_FAILED",
+      "exit": 1,
+      "file": "docs/spike-results/sm-t870-q03.json"
+    },
+    {
+      "question": "Q04",
+      "status": "SKIP",
+      "code": "NEEDS_PRIVATE_SSHD_FIXTURE",
+      "exit": 2,
+      "file": "docs/spike-results/sm-t870-q04.json"
+    },
+    {
+      "question": "Q05",
+      "status": "PASS",
+      "code": "BOUNDED_FANOUT_OK",
+      "exit": 0,
+      "file": "docs/spike-results/sm-t870-q05.json"
+    },
+    {
+      "question": "Q06",
+      "status": "SKIP",
+      "code": "MANUAL_CONFIRMATION_REQUIRED",
+      "exit": 2,
+      "file": "docs/spike-results/sm-t870-q06.json"
+    },
+    {
+      "question": "Q07",
+      "status": "FAIL",
+      "code": "IMPORT_FAILED",
+      "exit": 1,
+      "file": "docs/spike-results/sm-t870-q07.json"
+    },
+    {
+      "question": "Q08",
+      "status": "PASS",
+      "code": "INSTALL_OK",
+      "exit": 0,
+      "file": "docs/spike-results/sm-t870-q08.json"
+    },
+    {
+      "question": "Q09",
+      "status": "SKIP",
+      "code": "NO_MODEL_ENDPOINT",
+      "exit": 2,
+      "file": "docs/spike-results/sm-t870-q09.json"
+    },
+    {
+      "question": "Q10",
+      "status": "PASS",
+      "code": "PRIVATE_STORAGE_OK",
+      "exit": 0,
+      "file": "docs/spike-results/sm-t870-q10.json"
+    },
+    {
+      "question": "Q11",
+      "status": "SKIP",
+      "code": "MANUAL_CHECK_REQUIRED",
+      "exit": 2,
+      "file": "docs/spike-results/sm-t870-q11.json"
+    },
+    {
+      "question": "Q12",
+      "status": "SKIP",
+      "code": "DEVICE_COMPARISON_REQUIRED",
+      "exit": 2,
+      "file": "docs/spike-results/sm-t870-q12.json"
+    },
+    {
+      "question": "Q13",
+      "status": "FAIL",
+      "code": "UNKNOWN_OR_MISSING",
+      "exit": 1,
+      "file": "docs/spike-results/sm-t870-q13.json"
+    },
+    {
+      "question": "Q14",
+      "status": "SKIP",
+      "code": "MANUAL_CHECK_REQUIRED",
+      "exit": 2,
+      "file": "docs/spike-results/sm-t870-q14.json"
+    }
+  ]
+}

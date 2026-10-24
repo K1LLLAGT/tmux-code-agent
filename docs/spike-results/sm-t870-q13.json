@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "question": "Q13",
+  "spike": "license-audit",
+  "status": "PASS",
+  "code": "LICENSE_METADATA_OK",
+  "summary": "Installed dependency license metadata was recorded without guessing",
+  "evidence": {
+    "packages": [
+      {
+        "name": "starlette",
+        "version": "1.9.0",
+        "license": "BSD-3-Clause",
+        "source": "License-Expression",
+        "license_expression": "BSD-3-Clause",
+        "legacy_license": null,
+        "license_classifiers": []
+      },
+      {
+        "name": "uvicorn",
+        "version": "0.54.0",
+        "license": "BSD-3-Clause",
+        "source": "License-Expression",
+        "license_expression": "BSD-3-Clause",
+        "legacy_license": null,
+        "license_classifiers": []
+      },
+      {
+        "name": "websockets",
+        "version": "17.3",
+        "license": "BSD-3-Clause",
+        "source": "License-Expression",
+        "license_expression": "BSD-3-Clause",
+        "legacy_license": null,
+        "license_classifiers": []
+      },
+      {
+        "name": "h11",
+        "version": "0.16.0",
+        "license": "MIT",
+        "source": "License",
+        "license_expression": null,
+        "legacy_license": "MIT",
+        "license_classifiers": [
+          "License :: OSI Approved :: MIT License"
+        ]
+      },
+      {
+        "name": "anyio",
+        "version": "4.15.1",
+        "license": "MIT",
+        "source": "License-Expression",
+        "license_expression": "MIT",
+        "legacy_license": null,
+        "license_classifiers": []
+      }
+    ],
+    "blocking": []
+  },
+  "environment": {
+    "prefix": "/data/data/com.termux/files/usr",
+    "python": "3.14.8",
+    "platform": "Android-13-aarch64-64bit-ELF",
+    "arch": "aarch64",
+    "android_sdk": "33"
+  },
+  "timestamp": "2026-10-24T02:51:50.622483+00:00",
+  "runner_exit_code": 0
+}

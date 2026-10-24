@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "question": "Q14",
+  "spike": "wakelock-manual-device-test",
+  "status": "SKIP",
+  "code": "SCREEN_OFF_NOT_TESTED",
+  "summary": "Wake-lock acquire/release commands succeeded, but the screen remained on during the timing run, so screen-off behavior and wake-lock necessity were not measured.",
+  "evidence": {
+    "device": "SM-T870",
+    "wake_lock_available": true,
+    "wake_unlock_available": true,
+    "wake_lock_returncode": 0,
+    "wake_unlock_returncode": 0,
+    "screen_off_tested": false,
+    "timing_run": {
+      "screen_state": "on",
+      "iterations": 36,
+      "expected_interval_seconds": 10,
+      "large_gap_threshold_seconds": 15,
+      "large_gaps_detected": 0,
+      "first": "2026-10-23T23:10:12,273090763-04:00 iteration=1",
+      "last": "2026-10-23T23:16:04,409493285-04:00 iteration=36",
+      "result_file": "docs/spike-results/sm-t870-q14-screen-on-timing.log"
+    },
+    "invalid_initial_attempt": {
+      "returncode": 139,
+      "reason": "The shell current working directory had been deleted during Q06 cleanup. getcwd failed before the wake-lock test. This attempt is excluded from the feasibility result."
+    },
+    "interpretation": "Termux wake-lock acquisition and release are available and succeeded from a valid working directory. The completed timing run proves only normal screen-on execution continuity. It does not establish that a wake lock is required or sufficient for screen-off long-running TCA tasks."
+  },
+  "environment": {
+    "prefix": "/data/data/com.termux/files/usr",
+    "python": "3.14.8",
+    "platform": "Android-13-aarch64-64bit-ELF",
+    "arch": "aarch64",
+    "android_sdk": "33"
+  },
+  "runner_exit_code": 2,
+  "timestamp": "2026-10-24T03:20:47.947862+00:00"
+}

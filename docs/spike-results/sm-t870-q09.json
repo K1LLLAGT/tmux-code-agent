@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "question": "Q09",
+  "spike": "model-protocol",
+  "status": "SKIP",
+  "code": "NO_MODEL_ENDPOINT",
+  "summary": "Set TCA_MODEL_BASE_URL; quality benchmarking remains M7/M12",
+  "evidence": {},
+  "environment": {
+    "prefix": "/data/data/com.termux/files/usr",
+    "python": "3.14.8",
+    "platform": "Android-13-aarch64-64bit-ELF",
+    "arch": "aarch64",
+    "android_sdk": "33"
+  },
+  "timestamp": "2026-10-24T02:00:44.673781+00:00",
+  "runner_exit_code": 2
+}

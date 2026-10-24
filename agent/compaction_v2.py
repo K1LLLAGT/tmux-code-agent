@@ -1,0 +1,1 @@
+def savings(before_chars:int,after_chars:int)->dict:return {'before':before_chars,'after':after_chars,'saved':max(0,before_chars-after_chars),'ratio':0 if not before_chars else (before_chars-after_chars)/before_chars}

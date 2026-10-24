@@ -1,0 +1,6 @@
+M1.1 Package/core scaffold + errors
+Status: PASS
+Tests: 14 passed
+
+34f3d67ed2eb303d9dd381824e874f4f16aadf0c175174d8cdae931562efe834  core/errors.py
+b9b5a13e9d09db654a49537de581d9bfde8ae701bde8fa14a5de42ec9d92d56f  tests/unit/test_errors.py

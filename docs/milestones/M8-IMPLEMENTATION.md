@@ -1,0 +1,2 @@
+# M8 Implementation
+M8 preserves pre-existing user work by using hardened read-only Git invocations instead of destructive reset/clean/stash operations. Audit events form a SHA-256 predecessor chain. SQLite uses WAL with an ordered initial migration. Resume logic classifies live, orphaned and stopped states. Installer/uninstaller dry-runs explicitly avoid projects, ~/.ssh and the user's tmux. The physical-device gate exercises Git preservation, audit verification, DB migration and resume classification on SM-T870.

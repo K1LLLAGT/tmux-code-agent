@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "question": "Q02",
+  "spike": "tmux-features",
+  "status": "PASS",
+  "code": "FEATURES_RECORDED",
+  "summary": "tmux features were feature-detected; unsupported features require documented fallback",
+  "evidence": {
+    "version": {
+      "argv": [
+        "tmux",
+        "-V"
+      ],
+      "returncode": 0,
+      "stdout": "tmux 3.8\n",
+      "stderr": ""
+    },
+    "new_session_e": {
+      "argv": [
+        "tmux",
+        "-S",
+        "/data/data/com.termux/files/usr/tmp/tmpc5lg8ooo/t.sock",
+        "-f",
+        "/dev/null",
+        "new-session",
+        "-d",
+        "-s",
+        "a",
+        "-e",
+        "TCA_SPIKE=1",
+        "sleep 5"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    "pause_after": {
+      "argv": [
+        "tmux",
+        "-S",
+        "/data/data/com.termux/files/usr/tmp/tmpc5lg8ooo/t.sock",
+        "-f",
+        "/dev/null",
+        "new-session",
+        "-d",
+        "-s",
+        "b",
+        "-f",
+        "pause-after=1",
+        "sleep 5"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    "refresh_client_no_output": {
+      "argv": [
+        "tmux",
+        "-S",
+        "/data/data/com.termux/files/usr/tmp/tmpc5lg8ooo/t.sock",
+        "refresh-client",
+        "-f",
+        "no-output"
+      ],
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "no current client\n"
+    }
+  },
+  "environment": {
+    "prefix": "/data/data/com.termux/files/usr",
+    "python": "3.14.8",
+    "platform": "Android-13-aarch64-64bit-ELF",
+    "arch": "aarch64",
+    "android_sdk": "33"
+  },
+  "timestamp": "2026-10-24T01:41:49.636766+00:00",
+  "runner_exit_code": 0
+}

@@ -1,0 +1,2 @@
+# M6 Implementation
+M6 adds profile/capability decisions, deterministic command classification, non-overridable command denials, approval binding hashes, path canonicalisation, O_NOFOLLOW file reads, atomic expected-hash writes, backup/trash primitives, strict tool schemas and structured tool envelopes. Device acceptance verifies traversal/symlink refusal, optimistic stale-write protection and profile decisions on internal Termux storage.

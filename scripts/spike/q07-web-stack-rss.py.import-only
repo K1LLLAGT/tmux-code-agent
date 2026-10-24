@@ -1,0 +1,10 @@
+#!/data/data/com.termux/files/usr/bin/python
+from common import *
+import importlib,time,resource
+if not termux(): emit('Q07','web-stack-rss','SKIP','NOT_TERMUX','Target Termux required'); raise SystemExit(2)
+ev={};ok=True
+for m in ['starlette','uvicorn','websockets','h11','anyio']:
+ try: x=importlib.import_module(m);ev[m]=getattr(x,'__version__','imported')
+ except Exception as e: ev[m]=repr(e);ok=False
+ev['maxrss_kib']=resource.getrusage(resource.RUSAGE_SELF).ru_maxrss
+emit('Q07','web-stack-rss','PASS' if ok else 'FAIL','IMPORTS_OK' if ok else 'IMPORT_FAILED','Candidate pure-Python web stack imports and RSS were recorded',ev);raise SystemExit(0 if ok else 1)

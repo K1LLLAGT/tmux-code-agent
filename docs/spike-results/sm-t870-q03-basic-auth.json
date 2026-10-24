@@ -1,0 +1,1 @@
+{"schema_version":1,"question":"Q03","spike":"private-sshd","status":"PASS","code":"FORCED_COMMAND_OK","summary":"Private non-root sshd forced command succeeded","evidence":{"text":"port=60865"},"environment":{"prefix":"/data/data/com.termux/files/usr","python":"3.14.8","platform":"Android-13-aarch64-64bit-ELF"},"timestamp":"2026-10-24T02:08:35.099088+00:00"}

@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "question": "Q06",
+  "spike": "browser-launch-manual-device-test",
+  "status": "PASS",
+  "code": "BROWSER_LAUNCH_OK",
+  "summary": "termux-open-url successfully opened the Android browser to a loopback TCA test page.",
+  "evidence": {
+    "device": "SM-T870",
+    "url": "http://127.0.0.1:41876/",
+    "loopback_http_reachable": true,
+    "expected_page_text": "TCA Q06 PASS",
+    "termux_open_url_returncode": 0,
+    "browser_visibly_opened": true,
+    "expected_page_visibly_displayed": true,
+    "manual_confirmation": true,
+    "test_server_stopped": true,
+    "temporary_directory_removed": true
+  },
+  "environment": {
+    "prefix": "/data/data/com.termux/files/usr",
+    "python": "3.14.8",
+    "platform": "Android-13-aarch64-64bit-ELF",
+    "arch": "aarch64",
+    "android_sdk": "33"
+  },
+  "runner_exit_code": 0,
+  "timestamp": "2026-10-24T03:23:09.375136+00:00"
+}

@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "question": "Q05",
+  "spike": "process-budget",
+  "status": "PASS",
+  "code": "BOUNDED_FANOUT_OK",
+  "summary": "A conservative bounded process fan-out was measured",
+  "evidence": {
+    "baseline": {
+      "argv": [
+        "sh",
+        "-c",
+        "ps -A 2>/dev/null | wc -l"
+      ],
+      "returncode": 0,
+      "stdout": "23\n",
+      "stderr": ""
+    },
+    "spawned": 16,
+    "alive": 16
+  },
+  "environment": {
+    "prefix": "/data/data/com.termux/files/usr",
+    "python": "3.14.8",
+    "platform": "Android-13-aarch64-64bit-ELF",
+    "arch": "aarch64",
+    "android_sdk": "33"
+  },
+  "timestamp": "2026-10-24T02:00:34.437743+00:00",
+  "runner_exit_code": 0
+}

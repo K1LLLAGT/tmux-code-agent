@@ -1,0 +1,117 @@
+{
+  "device": "sm-t870",
+  "rows": [
+    {
+      "question": "Q01",
+      "status": "PASS",
+      "code": "CONTROL_FRAMES_OK",
+      "adr": "Accepted"
+    },
+    {
+      "question": "Q02",
+      "status": "PASS",
+      "code": "FEATURES_RECORDED",
+      "adr": "Accepted"
+    },
+    {
+      "question": "Q03",
+      "status": "PASS",
+      "code": "AUTH_MATRIX_OK",
+      "adr": "Accepted"
+    },
+    {
+      "question": "Q04",
+      "status": "PASS",
+      "code": "CONTROLMASTER_OK",
+      "adr": "Accepted"
+    },
+    {
+      "question": "Q05",
+      "status": "PASS",
+      "code": "BOUNDED_FANOUT_OK",
+      "adr": "Accepted"
+    },
+    {
+      "question": "Q06",
+      "status": "PASS",
+      "code": "BROWSER_LAUNCH_OK",
+      "adr": "Accepted"
+    },
+    {
+      "question": "Q07",
+      "status": "PASS",
+      "code": "LIVE_WEB_STACK_OK",
+      "adr": "Accepted"
+    },
+    {
+      "question": "Q08",
+      "status": "PASS",
+      "code": "INSTALL_OK",
+      "adr": "Accepted"
+    },
+    {
+      "question": "Q09",
+      "status": "SKIP",
+      "code": "NO_MODEL_ENDPOINT",
+      "adr": "Accepted"
+    },
+    {
+      "question": "Q10",
+      "status": "PASS",
+      "code": "PRIVATE_STORAGE_OK",
+      "adr": "Accepted"
+    },
+    {
+      "question": "Q11",
+      "status": "SKIP",
+      "code": "MANUAL_CHECK_REQUIRED",
+      "adr": "Accepted"
+    },
+    {
+      "question": "Q12",
+      "status": "SKIP",
+      "code": "DEVICE_COMPARISON_REQUIRED",
+      "adr": "Accepted"
+    },
+    {
+      "question": "Q13",
+      "status": "PASS",
+      "code": "LICENSE_METADATA_OK",
+      "adr": "Accepted"
+    },
+    {
+      "question": "Q14",
+      "status": "SKIP",
+      "code": "SCREEN_OFF_NOT_TESTED",
+      "adr": "Accepted"
+    }
+  ],
+  "venv": "PASS",
+  "requirements_lock_sha256": "b2d728c191093dcd5bc43f535d67831569cf00a1d2185a2484d8ad10802850b5",
+  "physical_device_coverage": {
+    "required": 1,
+    "validated": 1,
+    "devices": [
+      {
+        "physical_device_id": "23cdc706bc4c83d4",
+        "device_slug": "samsung-sm-t870",
+        "manufacturer": "samsung",
+        "model": "SM-T870",
+        "android_release": "13",
+        "android_sdk": "33",
+        "architecture": "aarch64",
+        "python": "3.14.8",
+        "q08_path": "docs/spike-results/devices/samsung-sm-t870/q08.json"
+      }
+    ],
+    "rejected": []
+  },
+  "blockers": [],
+  "warnings": [
+    "Q09: accepted deferral NO_MODEL_ENDPOINT",
+    "Q11: accepted deferral MANUAL_CHECK_REQUIRED",
+    "Q12: accepted deferral DEVICE_COMPARISON_REQUIRED",
+    "Q14: accepted deferral SCREEN_OFF_NOT_TESTED"
+  ],
+  "approved_to_begin_m1": true
+}

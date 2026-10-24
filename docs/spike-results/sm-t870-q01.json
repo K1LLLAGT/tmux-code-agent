@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "question": "Q01",
+  "spike": "tmux-control-pty",
+  "status": "PASS",
+  "code": "CONTROL_FRAMES_OK",
+  "summary": "tmux control mode over a PTY was exercised",
+  "evidence": {
+    "version": {
+      "argv": [
+        "tmux",
+        "-V"
+      ],
+      "returncode": 0,
+      "stdout": "tmux 3.8\n",
+      "stderr": ""
+    },
+    "pty_output": "%begin 1792806053 315 0\r\n%end 1792806053 315 0\r\n%session-changed $0 spike\r\n"
+  },
+  "environment": {
+    "prefix": "/data/data/com.termux/files/usr",
+    "python": "3.14.8",
+    "platform": "Android-13-aarch64-64bit-ELF",
+    "arch": "aarch64",
+    "android_sdk": "33"
+  },
+  "timestamp": "2026-10-24T01:40:54.353767+00:00",
+  "runner_exit_code": 0
+}

@@ -1,0 +1,29 @@
+Q    RESULT  CODE                                  ADR
+----------------------------------------------------------------------------------
+Q01  PASS    CONTROL_FRAMES_OK                    Accepted
+Q02  PASS    FEATURES_RECORDED                    Accepted
+Q03  PASS    AUTH_MATRIX_OK                       Accepted
+Q04  PASS    CONTROLMASTER_OK                     Accepted
+Q05  PASS    BOUNDED_FANOUT_OK                    Accepted
+Q06  PASS    BROWSER_LAUNCH_OK                    Accepted
+Q07  PASS    LIVE_WEB_STACK_OK                    Accepted
+Q08  PASS    INSTALL_OK                           Accepted
+Q09  SKIP    NO_MODEL_ENDPOINT                    Proposed
+Q10  PASS    PRIVATE_STORAGE_OK                   Accepted
+Q11  SKIP    MANUAL_CHECK_REQUIRED                Proposed
+Q12  SKIP    DEVICE_COMPARISON_REQUIRED           Proposed
+Q13  PASS    LICENSE_METADATA_OK                  Accepted
+Q14  SKIP    SCREEN_OFF_NOT_TESTED                Accepted
+
+PASS: 10 FAIL: 0 SKIP: 4 MISSING: 0
+
+Outstanding:
+- Q09: result=SKIP/NO_MODEL_ENDPOINT; ADR=Proposed
+- Q11: result=SKIP/MANUAL_CHECK_REQUIRED; ADR=Proposed
+- Q12: result=SKIP/DEVICE_COMPARISON_REQUIRED; ADR=Proposed
+- Q14: result=SKIP/SCREEN_OFF_NOT_TESTED; ADR=Accepted
+
+Additional M0 gates:
+- Two-device dependency install must be confirmed manually from device evidence.
+- Manual/deferred Q06, Q09, Q11, Q12, and Q14 must be resolved or covered by accepted ADR fallbacks.
+- Approved to begin M1 must remain NO until every gate is satisfied.

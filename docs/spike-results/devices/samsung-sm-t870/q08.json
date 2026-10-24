@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "question": "Q08",
+  "spike": "dependency-install-device",
+  "status": "PASS",
+  "code": "DEVICE_INSTALL_OK",
+  "summary": "Pinned dependencies installed and validated on this physical Android/Termux device.",
+  "evidence": {
+    "physical_device": true,
+    "physical_device_id": "23cdc706bc4c83d4",
+    "device_slug": "samsung-sm-t870",
+    "manufacturer": "samsung",
+    "model": "SM-T870",
+    "android_release": "13",
+    "android_sdk": "33",
+    "android_fingerprint": "samsung/gts7lwifixx/gts7lwifi:13/TP1A.220624.014/T870XXS8DXH1:user/release-keys",
+    "architecture": "aarch64",
+    "python": "3.14.8",
+    "requirements_lock_sha256": "b2d728c191093dcd5bc43f535d67831569cf00a1d2185a2484d8ad10802850b5",
+    "venv_returncode": 0,
+    "install_returncode": 0,
+    "pip_check_returncode": 0,
+    "packages": [
+      {
+        "name": "starlette",
+        "version": "1.9.0"
+      },
+      {
+        "name": "uvicorn",
+        "version": "0.54.0"
+      },
+      {
+        "name": "websockets",
+        "version": "17.3"
+      },
+      {
+        "name": "h11",
+        "version": "0.16.0"
+      },
+      {
+        "name": "anyio",
+        "version": "4.15.1"
+      }
+    ],
+    "missing_packages": [],
+    "freeze_file": "q08-freeze.txt"
+  },
+  "runner_exit_code": 0,
+  "timestamp": "2026-10-24T04:22:26.330925+00:00"
+}
