@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tmux-code-agent"
+version = "1.0.0rc2"
+description = "Termux coding agent: tmux + localhost SSH + mobile browser UI + local models"
+readme = "README.md"
+requires-python = ">=3.11"
+dynamic = ["dependencies"]
+
+[project.scripts]
+tmux-code-agent = "cli.main:main"
+
+[tool.setuptools]
+packages = [
+  "agent", "audit", "cli", "core", "fsguard", "gitsafe", "lib", "models",
+  "policy", "redact", "store", "supervisor", "termbridge", "tmuxctl",
+  "tools", "transport", "web",
+]
+
+[tool.setuptools.dynamic]
+dependencies = { file = ["requirements.in"] }
+
+[tool.pytest.ini_options]
+testpaths = ["tests/unit", "tests/integration", "tests/fault"]
+addopts = "-ra -q"
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+extend-exclude = ["archive", "release-candidates", "checkpoints", "rc2-install-test-*"]
