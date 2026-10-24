@@ -1,5 +1,5 @@
 starlette
 uvicorn
-websockets
+websockets>=14
 h11
 anyio

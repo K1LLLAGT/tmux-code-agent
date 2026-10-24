@@ -1,0 +1,32 @@
+name: ci
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.14"
+      - name: Install system packages
+        run: sudo apt-get update && sudo apt-get install -y tmux openssh-server
+      - name: Termux-style PREFIX
+        run: |
+          echo "PREFIX=$RUNNER_TEMP/prefix" >> "$GITHUB_ENV"
+          mkdir -p "$RUNNER_TEMP/prefix/tmp"
+      - name: Adapt Termux shebangs for the runner
+        run: |
+          grep -rl '^#!/data/data/com.termux' lib scripts tmux-code-agent 2>/dev/null \
+            | xargs -r sed -i '1s|^#!/data/data/com.termux/files/usr/bin/|#!/usr/bin/env |'
+          head -1 lib/tca-runner
+          echo "TCA_PYTHON=$(command -v python)" >> "$GITHUB_ENV"
+      - name: Install dependencies
+        run: pip install pytest -r requirements.lock
+      - name: Tests
+        run: python -m pytest tests/unit tests/integration tests/fault -q

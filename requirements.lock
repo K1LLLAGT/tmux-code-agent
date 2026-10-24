@@ -1,6 +1,9 @@
-# Candidate M0 input. Replace with a hash-pinned lock after Q08 on both target devices.
-starlette
-uvicorn
-websockets
-h11
-anyio
+anyio==4.15.1
+click==8.5.0
+h11==0.16.0
+httpx==0.28.1
+idna==3.20
+starlette==1.10.0
+typing_extensions==4.16.0
+uvicorn==0.54.0
+websockets==17.3
